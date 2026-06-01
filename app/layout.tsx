@@ -4,7 +4,6 @@ import './globals.css'
 import Header from '@/components/hotel/Header'
 import Footer from '@/components/hotel/Footer'
 import WhatsAppFloat from '@/components/hotel/WhatsAppFloat'
-import MobileBottomBar from '@/components/hotel/MobileBottomBar'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -54,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" className={`${inter.variable} bg-background`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${inter.variable} bg-background`} suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -117,7 +116,6 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <WhatsAppFloat />
-        <MobileBottomBar />
       </body>
     </html>
   )

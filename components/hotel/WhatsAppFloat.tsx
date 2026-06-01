@@ -16,7 +16,7 @@ export default function WhatsAppFloat() {
       transition={{ delay: 2, type: 'spring', stiffness: 200 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-24 right-4 md:bottom-8 md:right-6 z-50 bg-green-500 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center"
+      className="fixed bottom-6 right-6 md:bottom-8 md:right-6 z-50 bg-green-500 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center"
     >
       <MessageCircle className="w-6 h-6 fill-white" />
     </motion.a>
