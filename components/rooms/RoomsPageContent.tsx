@@ -131,7 +131,7 @@ export default function RoomsPageContent() {
                     </Link>
                     <Link
                       href={`/rooms/${room.slug}#book`}
-                      className="flex-1 text-center text-sm font-semibold bg-ocean-teal text-deep-navy border-2 border-ocean-teal hover:bg-[#8BC5C5] hover:border-[#8BC5C5] rounded-md py-2 transition-colors flex items-center justify-center gap-1 cursor-pointer"
+                      className="btn-primary flex-1 gap-1"
                     >
                       Book Now <ArrowRight className="w-3.5 h-3.5" />
                     </Link>

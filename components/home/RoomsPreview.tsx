@@ -128,7 +128,7 @@ export default function RoomsPreview() {
                 </div>
                 <Link
                   href={`/rooms/${activeRoom.slug}`}
-                  className="bg-ocean-teal text-deep-navy text-[11.5px] uppercase tracking-[0.18em] font-semibold text-center px-6 py-3.5 rounded-md border-2 border-ocean-teal hover:bg-[#8BC5C5] hover:border-[#8BC5C5] transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_2px_8px_rgba(0,0,0,0.08)] cursor-pointer"
+                  className="btn-primary gap-2"
                 >
                   Book Now <ArrowRight className="w-4 h-4" />
                 </Link>

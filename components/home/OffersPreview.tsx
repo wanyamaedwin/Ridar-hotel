@@ -80,7 +80,7 @@ export default function OffersPreview() {
 
                 <Link
                   href="/offers"
-                  className="w-full bg-ocean-teal text-deep-navy border-2 border-ocean-teal hover:border-[#8BC5C5] text-[14px] uppercase tracking-[0.15em] font-semibold py-3 text-center hover:bg-[#8BC5C5] transition-all duration-300 rounded-md shadow-[0_2px_8px_rgba(0,0,0,0.08)] block cursor-pointer"
+                  className="btn-primary w-full"
                 >
                   Claim Offer
                 </Link>

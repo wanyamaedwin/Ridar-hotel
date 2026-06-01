@@ -98,7 +98,7 @@ export default function EventsPreview() {
                   className="w-full bg-white border border-[#DDDDDD] text-[13px] text-charcoal py-3 px-4 focus:outline-none focus:border-ocean-teal focus:ring-1 focus:ring-ocean-teal/20 rounded-md font-sans font-light"
                 />
               </div>
-              <button className="w-full bg-ocean-teal text-deep-navy text-[14px] uppercase tracking-[0.15em] font-semibold py-3.5 hover:bg-[#8BC5C5] transition-all duration-300 rounded-md border-2 border-ocean-teal hover:border-[#8BC5C5] shadow-[0_2px_8px_rgba(0,0,0,0.08)] cursor-pointer">
+              <button className="btn-primary w-full">
                 Request Event Proposal
               </button>
             </div>

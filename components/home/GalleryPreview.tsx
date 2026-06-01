@@ -93,7 +93,7 @@ export default function GalleryPreview() {
         <div className="mt-12 text-center">
           <Link
             href="/gallery"
-            className="inline-flex items-center gap-2 bg-ocean-teal text-deep-navy border-2 border-ocean-teal hover:border-[#8BC5C5] text-[14px] uppercase tracking-[0.15em] font-semibold px-8 py-4 rounded-md hover:bg-[#8BC5C5] transition-all duration-300 shadow-[0_2px_8px_rgba(0,0,0,0.08)] cursor-pointer"
+            className="btn-primary gap-2"
           >
             View Full Gallery <ArrowRight className="w-4 h-4" />
           </Link>

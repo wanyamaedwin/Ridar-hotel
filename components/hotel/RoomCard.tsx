@@ -83,7 +83,7 @@ export default function RoomCard({
           </Link>
           <Link
             href={`/rooms/${slug}#book`}
-            className="flex-1 text-center text-[11px] font-sans font-semibold uppercase tracking-[0.15em] bg-ocean-teal text-deep-navy py-2 border-2 border-ocean-teal rounded-md hover:bg-[#8BC5C5] hover:border-[#8BC5C5] transition-all duration-300 flex items-center justify-center gap-1 cursor-pointer"
+            className="btn-primary flex-1 gap-1"
           >
             Book Now <ArrowRight className="w-3.5 h-3.5" />
           </Link>
