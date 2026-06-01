@@ -18,16 +18,16 @@ export default function OffersPreview() {
   }
 
   return (
-    <section id="offers" className="py-28 bg-[#FAF9F7]" aria-label="Exclusive offers and packages">
+    <section id="offers" className="py-28 bg-white" aria-label="Exclusive offers and packages">
       <div className="max-w-[1440px] mx-auto px-4 md:px-9">
         <div className="text-center mb-16">
-          <span className="text-[#B09B7C] text-[10.5px] uppercase tracking-[0.25em] font-sans font-semibold mb-2 block">
+          <span className="text-ocean-teal text-[11px] uppercase tracking-[0.25em] font-sans font-semibold mb-2 block">
             Special Offers
           </span>
-          <h2 className="font-serif text-[38px] font-light text-[#1A1A1A] leading-tight mb-4">
+          <h2 className="font-serif text-[38px] font-normal text-deep-navy leading-tight mb-4">
             Exclusive Packages &amp; Deals
           </h2>
-          <div className="w-12 h-[1px] bg-[#B09B7C]/40 mx-auto mb-8" />
+          <div className="w-12 h-[2px] bg-ocean-teal mx-auto mb-8" />
         </div>
 
         {/* 3-Column Luxury Cards */}
@@ -39,7 +39,7 @@ export default function OffersPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white border border-[#EDEAE5] shadow-none hover:shadow-none transition-all duration-300 flex flex-col h-full rounded-none"
+              className="bg-white border border-[#DDDDDD] shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.12)] transition-all duration-300 flex flex-col h-full rounded-md"
             >
               {/* Image Container with Discount Badge */}
               <div className="relative h-60 w-full overflow-hidden group">
@@ -51,36 +51,36 @@ export default function OffersPreview() {
                   sizes="(max-width: 768px) 100vw, 30vw"
                 />
                 <div className="absolute inset-0 bg-black/10" />
-                <span className="absolute top-4 left-4 bg-[#1A1A1A] text-white text-[10px] uppercase tracking-[0.15em] font-semibold px-3 py-1.5 rounded-none shadow-none">
+                <span className="absolute top-4 left-4 bg-ocean-teal text-deep-navy text-[11px] uppercase tracking-[0.15em] font-semibold px-3.5 py-1.5 rounded-full shadow-none">
                   {offer.badge}
                 </span>
               </div>
 
               {/* Card Body */}
               <div className="p-6 md:p-8 flex flex-col flex-1">
-                <span className="text-[#B09B7C] text-[10px] uppercase tracking-[0.15em] font-sans font-semibold block mb-2">
+                <span className="text-ocean-teal text-[11px] uppercase tracking-[0.15em] font-sans font-semibold block mb-2">
                   {offer.subtitle}
                 </span>
-                <h3 className="font-serif text-[22px] font-light text-[#1A1A1A] leading-snug mb-4">
+                <h3 className="font-serif text-[22px] font-normal text-deep-navy leading-snug mb-4">
                   {offer.title}
                 </h3>
-                <p className="text-[#4A4A4A] text-[13.5px] leading-[1.6] mb-6 font-light">
+                <p className="text-charcoal/80 text-[14px] leading-[1.65] mb-6 font-normal">
                   {offer.description}
                 </p>
 
                 {/* Bullet Inclusions list */}
-                <div className="flex flex-col gap-2 mb-8 mt-auto border-t border-[#EDEAE5] pt-5">
+                <div className="flex flex-col gap-2 mb-8 mt-auto border-t border-[#DDDDDD] pt-5">
                   {offer.inclusions.slice(0, 3).map((inclusion) => (
                     <div key={inclusion} className="flex items-center gap-2">
-                      <Check className="w-3.5 h-3.5 text-[#B09B7C] shrink-0" />
-                      <span className="text-[12px] text-medium-gray font-sans font-light">{inclusion}</span>
+                      <Check className="w-3.5 h-3.5 text-ocean-teal shrink-0" />
+                      <span className="text-[13px] text-charcoal/70 font-sans font-medium">{inclusion}</span>
                     </div>
                   ))}
                 </div>
 
                 <Link
                   href="/offers"
-                  className="w-full bg-[#1A1A1A] text-white text-[11.5px] uppercase tracking-[0.18em] font-semibold py-3.5 text-center hover:bg-[#B09B7C] transition-all duration-300 rounded-none shadow-none block cursor-pointer"
+                  className="w-full bg-ocean-teal text-deep-navy border-2 border-ocean-teal hover:border-[#8BC5C5] text-[14px] uppercase tracking-[0.15em] font-semibold py-3 text-center hover:bg-[#8BC5C5] transition-all duration-300 rounded-md shadow-[0_2px_8px_rgba(0,0,0,0.08)] block cursor-pointer"
                 >
                   Claim Offer
                 </Link>

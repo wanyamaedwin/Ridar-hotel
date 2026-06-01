@@ -44,12 +44,29 @@
   --dark-gray: #2B2B2B;
   --medium-gray: #6E6E6E;
 
+  /* Hoteller design system theme tokens mapped to Serena */
+  --ocean-teal: #B09B7C;
+  --deep-navy: #1A1A1A;
+  --sage-green: #9E8B6E;
+  --purple-accent: #7F54B3;
+  --lime-green: #7AD03A;
+  --sky-blue: #2EA2CC;
+  --charcoal: #1A1A1A;
+  --soft-gray: #EDEAE5;
+  --nearly-black: #2B2B2B;
+  --mid-gray: #6E6E6E;
+  --light-gray: #EDEAE5;
+  --pale-gray: #9E8B6E;
+  --danger-red: #D32F2F;
+  --warning-gold: #FFBA00;
+  --crimson: #AA0000;
+
   --radius: 0px; /* Sharp edges for ultimate structural elegance */
 }
 
 @theme inline {
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-serif: 'Reforma1969', 'Reforma 1969', Georgia, serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -71,7 +88,24 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  /* Custom Serena tokens updated */
+  /* Hoteller design system theme tokens mapped to Serena */
+  --color-ocean-teal: var(--ocean-teal);
+  --color-deep-navy: var(--deep-navy);
+  --color-sage-green: var(--sage-green);
+  --color-purple-accent: var(--purple-accent);
+  --color-lime-green: var(--lime-green);
+  --color-sky-blue: var(--sky-blue);
+  --color-charcoal: var(--charcoal);
+  --color-nearly-black: var(--nearly-black);
+  --color-soft-gray: var(--soft-gray);
+  --color-mid-gray: var(--mid-gray);
+  --color-light-gray: var(--light-gray);
+  --color-pale-gray: var(--pale-gray);
+  --color-danger-red: var(--danger-red);
+  --color-warning-gold: var(--warning-gold);
+  --color-crimson: var(--crimson);
+
+  /* Map old custom tokens to fallback to avoid compile breakages if referenced */
   --color-taupe: var(--taupe);
   --color-chocolate: var(--chocolate);
   --color-orange: var(--orange);
@@ -103,7 +137,7 @@
     line-height: 1.65;
     letter-spacing: 0.01em;
   }
-  /* Elegant Playfair Display for headings with refined tracking and light weight */
+  /* Elegant Reforma1969 for headings with refined tracking and light weight */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
     font-weight: 300;
@@ -202,6 +236,29 @@
   color: #FFFFFF;
 }
 
+/* Ghost Button - Background: transparent, Border: 2px solid #222222, Hover: background #F0F0F0 */
+.btn-ghost {
+  background-color: transparent;
+  color: var(--charcoal);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: 2px solid var(--charcoal);
+  border-radius: 4px;
+  height: auto;
+  line-height: normal;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-ghost:hover {
+  background-color: #F0F0F0;
+  color: var(--deep-navy);
+}
+
 /* Divider - Gold Thin Line */
 .divider-orange {
   width: 3.5rem;
@@ -257,3 +314,31 @@
     line-height: 26px;
   }
 }
+
+/* Ambient Floating Animation for Luxury Serena Atmosphere */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-25px) scale(1.04);
+  }
+}
+
+@keyframes float-reverse-slow {
+  0%, 100% {
+    transform: translateY(0px) scale(1.04);
+  }
+  50% {
+    transform: translateY(25px) scale(1);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 22s ease-in-out infinite;
+}
+
+.animate-float-reverse-slow {
+  animation: float-reverse-slow 28s ease-in-out infinite;
+}
+

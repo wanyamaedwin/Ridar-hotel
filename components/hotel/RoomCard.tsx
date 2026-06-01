@@ -33,7 +33,7 @@ export default function RoomCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.4, ease: 'easeOut', delay }}
-      className="group bg-white overflow-hidden border border-[#EDEAE5] flex flex-col rounded-none shadow-none"
+      className="group bg-white overflow-hidden border border-[#DDDDDD] flex flex-col rounded-md shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.12)] transition-all duration-300"
     >
       {/* Image */}
       <div className="relative overflow-hidden h-56">
@@ -46,7 +46,7 @@ export default function RoomCard({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
         <div className="absolute bottom-3 left-3">
-          <span className="bg-[#1A1A1A] text-white text-[10.5px] font-medium tracking-wider px-3 py-1 rounded-none uppercase font-sans">
+          <span className="bg-ocean-teal text-deep-navy text-[11px] font-semibold tracking-wider px-3 py-1 rounded-full uppercase font-sans">
             {price}
           </span>
         </div>
@@ -54,22 +54,22 @@ export default function RoomCard({
 
       {/* Content */}
       <div className="flex flex-col flex-1 p-6">
-        <h3 className="font-serif text-[20px] font-light text-[#1A1A1A] mb-2">{name}</h3>
+        <h3 className="font-serif text-[20px] font-normal text-deep-navy mb-2">{name}</h3>
         {description && (
-          <p className="text-[13px] text-medium-gray leading-[1.6] mb-4 line-clamp-2 font-light">{description}</p>
+          <p className="text-[14px] text-charcoal/80 leading-[1.65] mb-4 line-clamp-2 font-normal">{description}</p>
         )}
 
-        <div className="flex items-center gap-4 text-[11.5px] text-medium-gray mb-5 font-sans font-light">
+        <div className="flex items-center gap-4 text-[12px] text-charcoal/70 mb-5 font-sans font-medium">
           <span className="flex items-center gap-1.5">
-            <Users className="w-3.5 h-3.5 text-[#B09B7C]" />
+            <Users className="w-3.5 h-3.5 text-ocean-teal" />
             {occupancy}
           </span>
           <span className="flex items-center gap-1.5">
-            <Wifi className="w-3.5 h-3.5 text-[#B09B7C]" />
+            <Wifi className="w-3.5 h-3.5 text-ocean-teal" />
             Free Wi-Fi
           </span>
           <span className="flex items-center gap-1.5">
-            <Croissant className="w-3.5 h-3.5 text-[#B09B7C]" />
+            <Croissant className="w-3.5 h-3.5 text-ocean-teal" />
             {breakfast}
           </span>
         </div>
@@ -77,13 +77,13 @@ export default function RoomCard({
         <div className="mt-auto flex items-center gap-2">
           <Link
             href={`/rooms/${slug}`}
-            className="flex-1 text-center text-[11px] font-sans font-semibold uppercase tracking-[0.15em] text-[#1A1A1A] border border-[#1A1A1A] py-2.5 rounded-none hover:bg-[#1A1A1A] hover:text-white transition-all duration-300"
+            className="flex-1 text-center text-[11px] font-sans font-semibold uppercase tracking-[0.15em] text-charcoal border-2 border-[#DDDDDD] py-2 rounded-md hover:bg-[#F5F5F5] hover:border-charcoal transition-all duration-300"
           >
             View Room
           </Link>
           <Link
             href={`/rooms/${slug}#book`}
-            className="flex-1 text-center text-[11px] font-sans font-semibold uppercase tracking-[0.15em] bg-[#1A1A1A] text-white py-2.5 rounded-none hover:bg-[#B09B7C] transition-all duration-300 flex items-center justify-center gap-1"
+            className="flex-1 text-center text-[11px] font-sans font-semibold uppercase tracking-[0.15em] bg-ocean-teal text-deep-navy py-2 border-2 border-ocean-teal rounded-md hover:bg-[#8BC5C5] hover:border-[#8BC5C5] transition-all duration-300 flex items-center justify-center gap-1 cursor-pointer"
           >
             Book Now <ArrowRight className="w-3.5 h-3.5" />
           </Link>

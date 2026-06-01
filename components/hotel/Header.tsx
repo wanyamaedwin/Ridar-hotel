@@ -57,13 +57,13 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#FAF9F7] border-b border-[#EDEAE5] h-20 flex items-center shadow-none">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#DDDDDD] h-20 flex items-center shadow-none">
         <div className="max-w-[1440px] mx-auto px-6 md:px-10 w-full flex items-center justify-between">
 
           {/* Left: Logo */}
           <Link href="/" className="flex flex-col items-center leading-none shrink-0 group">
-            <span className="font-serif text-[17px] md:text-[19px] font-normal tracking-[0.15em] text-[#1A1A1A] uppercase">
-              Riders  Hotel
+            <span className="font-serif text-[17px] md:text-[19px] font-normal tracking-[0.15em] text-[#020101] uppercase">
+              Riders Hotel
             </span>
 
           </Link>
@@ -77,7 +77,7 @@ export default function Header() {
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item)}
                   className={cn(
-                    'px-3 xl:px-4 py-2 text-[10.5px] font-sans font-medium uppercase tracking-[0.2em] transition-colors whitespace-nowrap text-[#1A1A1A]/70 hover:text-[#B09B7C] cursor-pointer'
+                    'px-3 xl:px-4 py-2 text-[13px] font-sans font-semibold uppercase tracking-[0.15em] transition-colors whitespace-nowrap text-[#222222] hover:text-ocean-teal cursor-pointer'
                   )}
                 >
                   {item.label}
@@ -89,7 +89,7 @@ export default function Header() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(true)}
-            className="lg:hidden p-2 text-[#1A1A1A] hover:text-[#B09B7C] transition-colors"
+            className="lg:hidden p-2 text-[#222222] hover:text-ocean-teal transition-colors"
             aria-label="Open menu"
           >
             <Menu className="w-6 h-6" />
@@ -116,14 +116,14 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 28, stiffness: 260 }}
-              className="fixed top-0 right-0 bottom-0 w-80 bg-[#FAF9F7] z-50 flex flex-col px-6 py-8 shadow-none border-l border-[#EDEAE5]"
+              className="fixed top-0 right-0 bottom-0 w-80 bg-white z-50 flex flex-col px-6 py-8 shadow-none border-l border-[#DDDDDD]"
               aria-label="Mobile navigation"
             >
-              <div className="flex items-center justify-between mb-8 pb-4 border-b border-[#EDEAE5]">
-                <span className="font-serif text-[#1A1A1A] text-xl tracking-wider">Riders Serena</span>
+              <div className="flex items-center justify-between mb-8 pb-4 border-b border-[#DDDDDD]">
+                <span className="font-serif text-[#020101] text-xl tracking-wider">Riders Hotel</span>
                 <button
                   onClick={() => setMobileOpen(false)}
-                  className="text-[#9E8B6E] hover:text-[#1A1A1A] transition-colors"
+                  className="text-[#686868] hover:text-ocean-teal transition-colors"
                   aria-label="Close menu"
                 >
                   <X className="w-5 h-5" />
@@ -136,7 +136,7 @@ export default function Header() {
                     key={item.sectionId}
                     href={item.href}
                     onClick={(e) => handleNavClick(e, item)}
-                    className="py-3.5 font-sans text-[11.5px] uppercase tracking-[0.15em] border-b border-[#EDEAE5] text-[#1A1A1A]/80 hover:text-[#B09B7C] transition-colors cursor-pointer"
+                    className="py-3.5 font-sans text-[13px] font-semibold uppercase tracking-[0.15em] border-b border-[#DDDDDD] text-[#222222] hover:text-ocean-teal transition-colors cursor-pointer"
                   >
                     {item.label}
                   </a>

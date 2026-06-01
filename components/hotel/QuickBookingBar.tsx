@@ -25,7 +25,7 @@ function CounterField({
 }) {
   return (
     <div className="flex flex-col justify-center px-5 py-4 gap-1 min-w-[100px]">
-      <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#B09B7C] whitespace-nowrap">
+      <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-ocean-teal font-semibold whitespace-nowrap">
         {label}
       </span>
       <div className="flex items-center gap-3">
@@ -33,18 +33,18 @@ function CounterField({
           type="button"
           onClick={onDecrement}
           disabled={value <= min}
-          className="w-5 h-5 flex items-center justify-center text-[#1A1A1A]/50 hover:text-[#1A1A1A] disabled:opacity-25 transition-colors font-sans text-base leading-none"
+          className="w-5 h-5 flex items-center justify-center text-charcoal/50 hover:text-charcoal disabled:opacity-25 transition-colors font-sans text-base leading-none cursor-pointer"
           aria-label={`Decrease ${label}`}
         >
           −
         </button>
-        <span className="font-serif text-[18px] font-light text-[#1A1A1A] min-w-[16px] text-center leading-none">
+        <span className="font-serif text-[18px] font-light text-deep-navy min-w-[16px] text-center leading-none">
           {value}
         </span>
         <button
           type="button"
           onClick={onIncrement}
-          className="w-5 h-5 flex items-center justify-center text-[#1A1A1A]/50 hover:text-[#1A1A1A] transition-colors font-sans text-base leading-none"
+          className="w-5 h-5 flex items-center justify-center text-charcoal/50 hover:text-charcoal transition-colors font-sans text-base leading-none cursor-pointer"
           aria-label={`Increase ${label}`}
         >
           +
@@ -67,18 +67,18 @@ export default function QuickBookingBar() {
     setCounter((prev) => ({ ...prev, [field]: Math.max(min, prev[field] + delta) }))
 
   return (
-    <div className="w-full bg-white border-b border-[#EDEAE5] shadow-[0_2px_16px_rgba(0,0,0,0.06)]">
+    <div className="w-full bg-white border-b border-[#DDDDDD] shadow-[0_2px_8px_rgba(0,0,0,0.08)]">
       <div className="max-w-[1440px] mx-auto px-4 md:px-9">
-        <div className="flex flex-wrap md:flex-nowrap items-stretch divide-x divide-[#EDEAE5]">
+        <div className="flex flex-wrap md:flex-nowrap items-stretch divide-x divide-[#DDDDDD]">
 
           {/* Destination — static for single-property hotel */}
           <div className="flex flex-col justify-center px-5 py-4 gap-1 flex-1 min-w-[180px]">
-            <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#B09B7C]">
+            <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-ocean-teal font-semibold">
               Where do you want to go?
             </span>
             <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-[#B09B7C] shrink-0" />
-              <span className="font-serif text-[15px] font-light text-[#1A1A1A]">
+              <MapPin className="w-4 h-4 text-ocean-teal shrink-0" />
+              <span className="font-serif text-[15px] font-light text-deep-navy">
                 Riders Hotel, Seeta
               </span>
             </div>
@@ -88,19 +88,19 @@ export default function QuickBookingBar() {
           <div className="flex flex-col justify-center px-5 py-4 gap-1 min-w-[150px]">
             <label
               htmlFor="qb-checkin"
-              className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#B09B7C]"
+              className="font-sans text-[10px] uppercase tracking-[0.2em] text-ocean-teal font-semibold cursor-pointer"
             >
               Check-in
             </label>
             <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-[#1A1A1A]/40 shrink-0" />
+              <Calendar className="w-4 h-4 text-charcoal/40 shrink-0" />
               <input
                 id="qb-checkin"
                 type="date"
                 value={checkIn}
                 min={today}
                 onChange={(e) => setCheckIn(e.target.value)}
-                className="font-serif text-[15px] font-light text-[#1A1A1A] bg-transparent border-none outline-none w-full cursor-pointer"
+                className="font-serif text-[15px] font-light text-deep-navy bg-transparent border-none outline-none w-full cursor-pointer focus:ring-0"
               />
             </div>
           </div>
@@ -109,19 +109,19 @@ export default function QuickBookingBar() {
           <div className="flex flex-col justify-center px-5 py-4 gap-1 min-w-[150px]">
             <label
               htmlFor="qb-checkout"
-              className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#B09B7C]"
+              className="font-sans text-[10px] uppercase tracking-[0.2em] text-ocean-teal font-semibold cursor-pointer"
             >
               Check-out
             </label>
             <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-[#1A1A1A]/40 shrink-0" />
+              <Calendar className="w-4 h-4 text-charcoal/40 shrink-0" />
               <input
                 id="qb-checkout"
                 type="date"
                 value={checkOut}
                 min={checkIn}
                 onChange={(e) => setCheckOut(e.target.value)}
-                className="font-serif text-[15px] font-light text-[#1A1A1A] bg-transparent border-none outline-none w-full cursor-pointer"
+                className="font-serif text-[15px] font-light text-deep-navy bg-transparent border-none outline-none w-full cursor-pointer focus:ring-0"
               />
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function QuickBookingBar() {
             </Link>
             <button
               type="button"
-              className="font-sans text-[10px] text-[#B09B7C] hover:text-[#1A1A1A] transition-colors tracking-[0.1em] uppercase mt-0.5 flex items-center gap-1"
+              className="font-sans text-[10px] text-ocean-teal hover:text-deep-navy transition-colors tracking-[0.1em] uppercase mt-0.5 flex items-center gap-1 cursor-pointer"
             >
               Modify Reservation
               <ChevronRight className="w-3 h-3" />

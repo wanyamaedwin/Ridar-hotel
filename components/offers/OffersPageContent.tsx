@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import SectionHeader from '@/components/hotel/SectionHeader';
-import { hotelData } from '@/lib/hotel-data';
+import { hotelData, HOTEL_INFO } from '@/lib/hotel-data';
 
 const container = {
   hidden: { opacity: 0 },
@@ -75,11 +76,15 @@ export function OffersPageContent() {
                   </span>
                 </div>
 
-                {/* Image Placeholder */}
-                <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-4xl">{offer.icon}</span>
-                  </div>
+                {/* Image */}
+                <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                  <Image
+                    src={offer.image}
+                    alt={offer.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
 
                 {/* Content */}
@@ -97,8 +102,8 @@ export function OffersPageContent() {
                   </div>
 
                   <a
-                    href="https://wa.me/256700000000"
-                    className="block w-full text-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+                    href={`https://wa.me/${HOTEL_INFO.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20claim%20the%20${encodeURIComponent(offer.title)}%20offer.`}
+                    className="btn-primary w-full text-center"
                   >
                     Claim Offer
                   </a>
@@ -164,8 +169,8 @@ export function OffersPageContent() {
             Contact us today to book your special offer and save on your next stay
           </p>
           <a
-            href="https://wa.me/256700000000"
-            className="inline-block px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors font-semibold"
+            href={`https://wa.me/${HOTEL_INFO.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20special%20offers%20at%20Riders%20Hotel.`}
+            className="btn-primary"
           >
             Chat on WhatsApp
           </a>

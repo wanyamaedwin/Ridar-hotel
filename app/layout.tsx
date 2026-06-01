@@ -1,17 +1,10 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Inter } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/hotel/Header'
 import Footer from '@/components/hotel/Footer'
 import WhatsAppFloat from '@/components/hotel/WhatsAppFloat'
 import MobileBottomBar from '@/components/hotel/MobileBottomBar'
-
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-serif',
-  display: 'swap',
-})
 
 const inter = Inter({
   subsets: ['latin'],
@@ -61,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" className={`${playfair.variable} ${inter.variable} bg-background`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${inter.variable} bg-background`}>
       <head>
         <script
           type="application/ld+json"

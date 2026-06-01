@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/hotel/SectionHeader';
-import { hotelData } from '@/lib/hotel-data';
+import { hotelData, HOTEL_INFO } from '@/lib/hotel-data';
 
 const container = {
   hidden: { opacity: 0 },
@@ -158,8 +158,8 @@ export function DiningPageContent() {
             Contact us to make a reservation or inquire about our dining experiences
           </p>
           <a
-            href="https://wa.me/256700000000"
-            className="inline-block px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+            href={`https://wa.me/${HOTEL_INFO.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20reserve%20a%20table%20at%20Riders%20Hotel.`}
+            className="btn-primary"
           >
             WhatsApp Us
           </a>

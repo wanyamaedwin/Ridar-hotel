@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 import { Users, Wifi, Croissant, ArrowRight, Tag } from 'lucide-react'
 import SectionHeader from '@/components/hotel/SectionHeader'
 import BookingBar from '@/components/hotel/BookingBar'
-import { ROOMS } from '@/lib/hotel-data'
+import { ROOMS, HOTEL_INFO } from '@/lib/hotel-data'
 
 const PURPOSES = ['All', 'Business', 'Family', 'Couple', 'Long stay']
 
@@ -125,13 +125,13 @@ export default function RoomsPageContent() {
                   <div className="mt-auto flex gap-2">
                     <Link
                       href={`/rooms/${room.slug}`}
-                      className="flex-1 text-center text-sm font-semibold text-charcoal border border-charcoal/30 rounded-full py-2 hover:bg-charcoal hover:text-white transition-colors"
+                      className="flex-1 text-center text-sm font-semibold border-2 border-[#DDDDDD] hover:bg-[#F5F5F5] hover:border-charcoal text-charcoal rounded-md py-2 transition-colors cursor-pointer"
                     >
                       View Details
                     </Link>
                     <Link
                       href={`/rooms/${room.slug}#book`}
-                      className="flex-1 text-center text-sm font-semibold bg-primary text-charcoal rounded-full py-2 hover:bg-primary-light transition-colors flex items-center justify-center gap-1"
+                      className="flex-1 text-center text-sm font-semibold bg-ocean-teal text-deep-navy border-2 border-ocean-teal hover:bg-[#8BC5C5] hover:border-[#8BC5C5] rounded-md py-2 transition-colors flex items-center justify-center gap-1 cursor-pointer"
                     >
                       Book Now <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
@@ -153,14 +153,14 @@ export default function RoomsPageContent() {
             available rate and personalised help.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <Link href="/contact" className="bg-primary text-charcoal font-semibold px-7 py-3 rounded-full hover:bg-primary-light transition-colors text-sm">
+            <Link href="/contact" className="btn-primary text-[14px] px-7 py-3 rounded-md cursor-pointer">
               Contact Reservations
             </Link>
             <a
-              href="https://wa.me/256700000000"
+              href={`https://wa.me/${HOTEL_INFO.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Riders%20Hotel.`}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-white/30 text-white font-semibold px-7 py-3 rounded-full hover:bg-white/10 transition-colors text-sm"
+              className="btn-secondary bg-transparent text-white border-2 border-white/30 hover:border-white hover:bg-white/10 text-[14px] px-7 py-3 rounded-md cursor-pointer"
             >
               WhatsApp Us
             </a>

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/hotel/SectionHeader';
+import { HOTEL_INFO } from '@/lib/hotel-data';
 
 const container = {
   hidden: { opacity: 0 },
@@ -98,9 +99,9 @@ export function GalleryPageContent() {
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`px-6 py-2 rounded-full font-semibold transition-all ${
+                className={`px-6 py-2 rounded-md font-semibold transition-all cursor-pointer ${
                   selectedCategory === cat.id
-                    ? 'bg-primary text-white shadow-lg'
+                    ? 'bg-ocean-teal text-deep-navy shadow-md'
                     : 'bg-charcoal/5 text-charcoal hover:bg-charcoal/10'
                 }`}
               >
@@ -167,8 +168,8 @@ export function GalleryPageContent() {
             These are just glimpses of what awaits you at Riders Hotel. Book your stay today.
           </p>
           <a
-            href="https://wa.me/256700000000"
-            className="inline-block px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+            href={`https://wa.me/${HOTEL_INFO.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Riders%20Hotel.`}
+            className="btn-primary"
           >
             Book Your Stay
           </a>

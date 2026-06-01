@@ -26,9 +26,9 @@ export default function EventsPreview() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-6 relative p-4 bg-[#F6F5F2] border border-[#EDEAE5] shadow-none rounded-none"
+            className="lg:col-span-6 relative p-4 bg-muted border border-[#DDDDDD] shadow-[0_2px_8px_rgba(0,0,0,0.08)] rounded-md"
           >
-            <div className="relative h-[380px] sm:h-[480px] w-full overflow-hidden border border-[#EDEAE5]">
+            <div className="relative h-[380px] sm:h-[480px] w-full overflow-hidden border border-[#DDDDDD] rounded-md">
               <Image
                 src="/assets/meetins.webp"
                 alt="Conference room setup"
@@ -48,15 +48,15 @@ export default function EventsPreview() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="lg:col-span-6 flex flex-col"
           >
-            <span className="text-[#B09B7C] text-[10.5px] uppercase tracking-[0.25em] font-sans font-semibold mb-2">
+            <span className="text-ocean-teal text-[11px] uppercase tracking-[0.25em] font-sans font-semibold mb-2">
               Conferences &amp; Galas
             </span>
-            <h2 className="font-serif text-[38px] font-light text-[#1A1A1A] leading-tight mb-4">
+            <h2 className="font-serif text-[38px] font-normal text-deep-navy leading-tight mb-4">
               Host Memorable Events
             </h2>
-            <div className="w-12 h-[1px] bg-[#B09B7C]/40 mb-6" />
+            <div className="w-12 h-[2px] bg-ocean-teal mb-6" />
 
-            <p className="text-[#4A4A4A] text-[14.5px] leading-[1.65] mb-8 font-light">
+            <p className="text-charcoal/80 text-[16px] leading-[1.7] mb-8 font-normal">
               From high-level corporate board meetings near Namanve to grand wedding receptions, Riders Hotel offers fully air-conditioned halls, modern audio-visual technology, and bespoke Ugandan hospitality to elevate your event.
             </p>
 
@@ -64,19 +64,19 @@ export default function EventsPreview() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4 mb-8">
               {EVENT_AMENITIES.map((amenity) => (
                 <div key={amenity} className="flex items-start gap-2.5">
-                  <Check className="w-4 h-4 text-[#B09B7C] shrink-0 mt-0.5" />
-                  <span className="text-[13px] text-medium-gray font-sans font-light leading-snug">{amenity}</span>
+                  <Check className="w-4 h-4 text-ocean-teal shrink-0 mt-0.5" />
+                  <span className="text-[13px] text-charcoal/80 font-sans font-medium leading-snug">{amenity}</span>
                 </div>
               ))}
             </div>
 
             {/* Inquiry Form */}
-            <div className="bg-[#F6F5F2] border border-[#EDEAE5] p-6 shadow-none rounded-none">
-              <span className="text-[10px] uppercase tracking-[0.15em] font-sans font-bold text-[#1A1A1A] block mb-4">
+            <div className="bg-muted border border-[#DDDDDD] p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] rounded-md">
+              <span className="text-[11px] uppercase tracking-[0.15em] font-sans font-bold text-deep-navy block mb-4">
                 Quick Event Enquiry
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
-                <select className="w-full bg-white border border-[#EDEAE5] text-[13px] text-[#1A1A1A] py-3 px-4 focus:outline-none focus:border-[#B09B7C] rounded-none appearance-none cursor-pointer font-sans font-light">
+                <select className="w-full bg-white border border-[#DDDDDD] text-[13px] text-charcoal py-3 px-4 focus:outline-none focus:border-ocean-teal focus:ring-1 focus:ring-ocean-teal/20 rounded-md appearance-none cursor-pointer font-sans font-light">
                   <option value="">Event Category</option>
                   <option>Corporate Conference</option>
                   <option>Board Meeting</option>
@@ -85,20 +85,20 @@ export default function EventsPreview() {
                 </select>
                 <input
                   type="date"
-                  className="w-full bg-white border border-[#EDEAE5] text-[13px] text-[#1A1A1A] py-3 px-4 focus:outline-none focus:border-[#B09B7C] rounded-none font-sans font-light cursor-pointer"
+                  className="w-full bg-white border border-[#DDDDDD] text-[13px] text-charcoal py-3 px-4 focus:outline-none focus:border-ocean-teal focus:ring-1 focus:ring-ocean-teal/20 rounded-md font-sans font-light cursor-pointer"
                 />
                 <input
                   type="number"
                   placeholder="Expected Guests"
-                  className="w-full bg-white border border-[#EDEAE5] text-[13px] text-[#1A1A1A] py-3 px-4 focus:outline-none focus:border-[#B09B7C] rounded-none font-sans font-light"
+                  className="w-full bg-white border border-[#DDDDDD] text-[13px] text-charcoal py-3 px-4 focus:outline-none focus:border-ocean-teal focus:ring-1 focus:ring-ocean-teal/20 rounded-md font-sans font-light"
                 />
                 <input
                   type="tel"
                   placeholder="Phone or WhatsApp Number"
-                  className="w-full bg-white border border-[#EDEAE5] text-[13px] text-[#1A1A1A] py-3 px-4 focus:outline-none focus:border-[#B09B7C] rounded-none font-sans font-light"
+                  className="w-full bg-white border border-[#DDDDDD] text-[13px] text-charcoal py-3 px-4 focus:outline-none focus:border-ocean-teal focus:ring-1 focus:ring-ocean-teal/20 rounded-md font-sans font-light"
                 />
               </div>
-              <button className="w-full bg-[#1A1A1A] text-white text-[11.5px] uppercase tracking-[0.18em] font-semibold py-3.5 hover:bg-[#B09B7C] transition-all duration-300 rounded-none shadow-none cursor-pointer">
+              <button className="w-full bg-ocean-teal text-deep-navy text-[14px] uppercase tracking-[0.15em] font-semibold py-3.5 hover:bg-[#8BC5C5] transition-all duration-300 rounded-md border-2 border-ocean-teal hover:border-[#8BC5C5] shadow-[0_2px_8px_rgba(0,0,0,0.08)] cursor-pointer">
                 Request Event Proposal
               </button>
             </div>
@@ -106,7 +106,7 @@ export default function EventsPreview() {
             {/* CTA Link to dedicated events subpage */}
             <Link
               href="/events"
-              className="mt-6 font-sans text-[11.5px] uppercase tracking-[0.18em] font-semibold text-[#1A1A1A] hover:text-[#B09B7C] transition-colors self-start flex items-center gap-1.5 cursor-pointer"
+              className="mt-6 font-sans text-[13px] uppercase tracking-[0.15em] font-semibold text-deep-navy hover:text-ocean-teal transition-colors self-start flex items-center gap-1.5 cursor-pointer"
             >
               Learn More About Spaces <ArrowRight className="w-4 h-4" />
             </Link>

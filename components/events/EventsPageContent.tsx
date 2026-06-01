@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Users } from 'lucide-react'
 import SectionHeader from '@/components/hotel/SectionHeader'
 import FAQAccordion from '@/components/hotel/FAQAccordion'
-import { hotelData } from '@/lib/hotel-data'
+import { hotelData, HOTEL_INFO } from '@/lib/hotel-data'
 
 const container = {
   hidden: { opacity: 0 },
@@ -123,8 +123,8 @@ export default function EventsPageContent() {
             Contact our events team to discuss your requirements and get a custom quote.
           </p>
           <a
-            href="https://wa.me/256700000000"
-            className="inline-block px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+            href={`https://wa.me/${HOTEL_INFO.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20hosting%20an%20event%20at%20Riders%20Hotel.`}
+            className="btn-primary"
           >
             Contact Events Team
           </a>

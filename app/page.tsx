@@ -9,6 +9,7 @@ import DiningPreview from '@/components/home/DiningPreview'
 import OffersPreview from '@/components/home/OffersPreview'
 import GalleryPreview from '@/components/home/GalleryPreview'
 import MapContactSection from '@/components/home/MapContactSection'
+import ScrollReveal from '@/components/home/ScrollReveal'
 
 export const metadata: Metadata = {
   title: 'Riders Hotel — Premium Luxury Hotel in Seeta, Mukono, Uganda',
@@ -21,14 +22,38 @@ export default function HomePage() {
     <>
       <HeroSection />
       <QuickBookingBar />
-      <IntroSection />
-      <RoomsPreview />
-      <DiningPreview />
-      <EventsPreview />
-      <OffersPreview />
-      <WhyStaySection />
-      <GalleryPreview />
-      <MapContactSection />
+      
+      <ScrollReveal>
+        <IntroSection />
+      </ScrollReveal>
+      
+      <ScrollReveal>
+        <RoomsPreview />
+      </ScrollReveal>
+      
+      <ScrollReveal>
+        <DiningPreview />
+      </ScrollReveal>
+      
+      <ScrollReveal>
+        <EventsPreview />
+      </ScrollReveal>
+      
+      <ScrollReveal>
+        <OffersPreview />
+      </ScrollReveal>
+      
+      <ScrollReveal>
+        <WhyStaySection />
+      </ScrollReveal>
+      
+      <ScrollReveal>
+        <GalleryPreview />
+      </ScrollReveal>
+      
+      <ScrollReveal>
+        <MapContactSection />
+      </ScrollReveal>
     </>
   )
 }
