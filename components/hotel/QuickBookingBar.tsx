@@ -156,7 +156,7 @@ export default function QuickBookingBar() {
           {/* CTA */}
           <div className="flex flex-col items-center justify-center px-5 py-4 gap-1 min-w-[140px]">
             <Link
-              href={`/rooms?checkin=${checkIn}&checkout=${checkOut}&rooms=${counter.rooms}&adults=${counter.adults}&children=${counter.children}`}
+              href="/"
               className="btn-primary w-full text-center whitespace-nowrap"
             >
               Book Now

@@ -91,7 +91,7 @@ export default function DiningPreview() {
               </div>
 
               <Link
-                href="/dining"
+                href="/"
                 className="btn-primary gap-2"
               >
                 Explore Dining &amp; Menu <ArrowRight className="w-4 h-4" />

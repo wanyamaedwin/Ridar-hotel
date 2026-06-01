@@ -79,7 +79,7 @@ export default function OffersPreview() {
                 </div>
 
                 <Link
-                  href="/offers"
+                  href="/"
                   className="btn-primary w-full"
                 >
                   Claim Offer

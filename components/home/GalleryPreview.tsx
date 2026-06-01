@@ -92,7 +92,7 @@ export default function GalleryPreview() {
 
         <div className="mt-12 text-center">
           <Link
-            href="/gallery"
+            href="/"
             className="btn-primary gap-2"
           >
             View Full Gallery <ArrowRight className="w-4 h-4" />

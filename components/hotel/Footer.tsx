@@ -6,28 +6,28 @@ const footerLinks = [
   {
     heading: 'Explore',
     links: [
-      { label: 'About Us', href: '/about' },
-      { label: 'Our Rooms', href: '/rooms' },
-      { label: 'Dining', href: '/dining' },
-      { label: 'Events & Spaces', href: '/events' },
+      { label: 'About Us', href: '/' },
+      { label: 'Our Rooms', href: '/#accommodation' },
+      { label: 'Dining', href: '/#dining' },
+      { label: 'Events & Spaces', href: '/#events' },
     ],
   },
   {
     heading: 'Reservations',
     links: [
-      { label: 'Book a Room', href: '/rooms' },
-      { label: 'Special Offers', href: '/offers' },
-      { label: 'Corporate Rates', href: '/offers#corporate-rates' },
-      { label: 'Group Bookings', href: '/contact' },
+      { label: 'Book a Room', href: '/#accommodation' },
+      { label: 'Special Offers', href: '/#offers' },
+      { label: 'Corporate Rates', href: '/#offers' },
+      { label: 'Group Bookings', href: '/#contact' },
     ],
   },
   {
     heading: 'Discover',
     links: [
-      { label: 'Gallery', href: '/gallery' },
-      { label: 'Local Area', href: '/local-area' },
+      { label: 'Gallery', href: '/#gallery' },
+      { label: 'Local Area', href: '/' },
       { label: 'FAQs', href: '/#contact' },
-      { label: 'Contact Us', href: '/contact' },
+      { label: 'Contact Us', href: '/#contact' },
     ],
   },
   {

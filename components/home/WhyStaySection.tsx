@@ -41,7 +41,7 @@ export default function WhyStaySection() {
               </div>
 
               <Link
-                href="/contact"
+                href="/"
                 className="bg-ocean-teal text-deep-navy text-[14px] uppercase tracking-[0.15em] font-semibold px-8 py-4 rounded-md hover:bg-[#8BC5C5] transition-all duration-300 self-start flex items-center gap-2 border-2 border-ocean-teal hover:border-[#8BC5C5] shadow-[0_2px_8px_rgba(0,0,0,0.08)] cursor-pointer"
               >
                 Book Spa Session <ArrowRight className="w-4 h-4" />
@@ -112,7 +112,7 @@ export default function WhyStaySection() {
               </p>
 
               <Link
-                href="/events"
+                href="/"
                 className="bg-ocean-teal text-deep-navy text-[14px] uppercase tracking-[0.15em] font-semibold px-8 py-4 rounded-md hover:bg-[#8BC5C5] transition-all duration-300 self-start flex items-center gap-2 border-2 border-ocean-teal hover:border-[#8BC5C5] shadow-[0_2px_8px_rgba(0,0,0,0.08)] cursor-pointer"
               >
                 Inquire About Weddings <ArrowRight className="w-4 h-4" />
@@ -147,7 +147,7 @@ export default function WhyStaySection() {
               </p>
 
               <Link
-                href="/gallery"
+                href="/"
                 className="bg-ocean-teal text-deep-navy text-[14px] uppercase tracking-[0.15em] font-semibold px-8 py-4 rounded-md hover:bg-[#8BC5C5] transition-all duration-300 self-start flex items-center gap-2 border-2 border-ocean-teal hover:border-[#8BC5C5] shadow-[0_2px_8px_rgba(0,0,0,0.08)] cursor-pointer"
               >
                 View Art Showcase <ArrowRight className="w-4 h-4" />

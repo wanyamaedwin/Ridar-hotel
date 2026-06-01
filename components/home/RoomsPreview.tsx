@@ -127,7 +127,7 @@ export default function RoomsPreview() {
                   <span className="font-serif text-[18px] md:text-[20px] text-deep-navy font-normal">{activeRoom.price}</span>
                 </div>
                 <Link
-                  href={`/rooms/${activeRoom.slug}`}
+                  href="/"
                   className="btn-primary gap-2"
                 >
                   Book Now <ArrowRight className="w-4 h-4" />

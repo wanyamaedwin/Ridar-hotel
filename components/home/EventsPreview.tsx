@@ -105,7 +105,7 @@ export default function EventsPreview() {
 
             {/* CTA Link to dedicated events subpage */}
             <Link
-              href="/events"
+              href="/"
               className="mt-6 font-sans text-[13px] uppercase tracking-[0.15em] font-semibold text-deep-navy hover:text-ocean-teal transition-colors self-start flex items-center gap-1.5 cursor-pointer"
             >
               Learn More About Spaces <ArrowRight className="w-4 h-4" />

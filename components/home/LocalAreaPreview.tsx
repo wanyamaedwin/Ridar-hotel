@@ -52,7 +52,7 @@ export default function LocalAreaPreview() {
 
         <div className="mt-8 text-center">
           <Link
-            href="/local-area"
+            href="/"
             className="inline-flex items-center gap-2 bg-charcoal text-white font-semibold px-7 py-3 rounded-full hover:bg-primary hover:text-charcoal transition-colors text-sm"
           >
             Explore Local Area <ArrowRight className="w-4 h-4" />

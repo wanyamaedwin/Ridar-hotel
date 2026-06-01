@@ -8,14 +8,14 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
 
 const NAV_ITEMS = [
-  { label: 'Accommodation', href: '/rooms', sectionId: 'accommodation' },
-  { label: 'Dining', href: '/dining', sectionId: 'dining' },
-  { label: 'Meetings & Events', href: '/events', sectionId: 'events' },
-  { label: 'Offers', href: '/offers', sectionId: 'offers' },
+  { label: 'Accommodation', href: '/#accommodation', sectionId: 'accommodation' },
+  { label: 'Dining', href: '/#dining', sectionId: 'dining' },
+  { label: 'Meetings & Events', href: '/#events', sectionId: 'events' },
+  { label: 'Offers', href: '/#offers', sectionId: 'offers' },
   { label: 'Wellness', href: '/#wellness', sectionId: 'wellness' },
   { label: 'Weddings', href: '/#weddings', sectionId: 'weddings' },
-  { label: 'Gallery', href: '/gallery', sectionId: 'gallery' },
-  { label: 'Contact', href: '/contact', sectionId: 'contact' },
+  { label: 'Gallery', href: '/#gallery', sectionId: 'gallery' },
+  { label: 'Contact', href: '/#contact', sectionId: 'contact' },
 ]
 
 export default function Header() {

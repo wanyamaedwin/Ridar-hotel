@@ -65,13 +65,13 @@ export default function FinalCTA() {
           className="flex flex-wrap items-center justify-center gap-4"
         >
           <Link
-            href="/rooms"
+            href="/"
             className="bg-orange text-chocolate font-semibold px-8 py-3.5 rounded-none hover:bg-taupe transition-colors text-sm flex items-center gap-2"
           >
             Check Availability <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
-            href="/contact"
+            href="/"
             className="border border-cream/40 text-cream font-semibold px-8 py-3.5 rounded-none hover:bg-cream/10 transition-colors text-sm flex items-center gap-2"
           >
             <MessageCircle className="w-4 h-4 text-green-400" />
