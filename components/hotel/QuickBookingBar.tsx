@@ -79,7 +79,7 @@ export default function QuickBookingBar() {
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-ocean-teal shrink-0" />
               <span className="font-serif text-[15px] font-light text-deep-navy">
-                Riders Hotel, Seeta
+                Ridar Hotel, Seeta
               </span>
             </div>
           </div>

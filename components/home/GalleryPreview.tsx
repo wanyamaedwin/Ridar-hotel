@@ -12,8 +12,8 @@ const CATEGORIES = ['All', 'Rooms', 'Dining', 'Events', 'Exterior']
 export default function GalleryPreview() {
   const [filter, setFilter] = useState('All')
 
-  const filteredImages = filter === 'All' 
-    ? GALLERY_IMAGES.slice(0, 8) 
+  const filteredImages = filter === 'All'
+    ? GALLERY_IMAGES.slice(0, 8)
     : GALLERY_IMAGES.filter((img) => img.category === filter).slice(0, 8)
 
   return (
@@ -24,7 +24,7 @@ export default function GalleryPreview() {
             Gallery
           </span>
           <h2 className="font-serif text-[38px] font-normal text-deep-navy leading-tight mb-4">
-            A Glimpse of Riders Hotel
+            A Glimpse of Ridar Hotel
           </h2>
           <div className="w-12 h-[2px] bg-ocean-teal mx-auto mb-8" />
         </div>
@@ -37,11 +37,10 @@ export default function GalleryPreview() {
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`px-5 py-2 font-sans text-[13px] uppercase tracking-[0.15em] font-semibold border-b-2 transition-all duration-300 cursor-pointer ${
-                  isActive
+                className={`px-5 py-2 font-sans text-[13px] uppercase tracking-[0.15em] font-semibold border-b-2 transition-all duration-300 cursor-pointer ${isActive
                     ? 'border-ocean-teal text-ocean-teal'
                     : 'border-transparent text-charcoal/70 hover:text-deep-navy hover:border-ocean-teal/50'
-                }`}
+                  }`}
               >
                 {cat}
               </button>
@@ -50,8 +49,8 @@ export default function GalleryPreview() {
         </div>
 
         {/* Masonry-Style Grid with AnimatePresence */}
-        <motion.div 
-          layout 
+        <motion.div
+          layout
           className="grid grid-cols-2 md:grid-cols-4 gap-4"
         >
           <AnimatePresence mode="popLayout">
@@ -73,7 +72,7 @@ export default function GalleryPreview() {
                   className="object-cover group-hover:scale-103 transition-transform duration-700"
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                 />
-                
+
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-[#101010]/55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="flex flex-col items-center gap-1.5 text-white">

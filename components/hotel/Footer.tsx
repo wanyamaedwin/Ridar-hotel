@@ -65,15 +65,15 @@ export default function Footer() {
               aria-hidden="true"
             >
               {/* Simple stylised leaf / tree emblem */}
-              <path d="M24 2 C24 2 8 16 8 32 C8 44 16 56 24 62 C32 56 40 44 40 32 C40 16 24 2 24 2Z" opacity="0.15"/>
-              <path d="M24 8 C24 8 12 20 12 33 C12 43 17 53 24 58 C31 53 36 43 36 33 C36 20 24 8 24 8Z" opacity="0.3"/>
-              <path d="M24 14 C24 14 16 24 16 34 C16 42 19 50 24 55 C29 50 32 42 32 34 C32 24 24 14 24 14Z" opacity="0.6"/>
-              <path d="M24 20 C24 20 19 28 19 35 C19 41 21 47 24 51 C27 47 29 41 29 35 C29 28 24 20 24 20Z"/>
-              <rect x="23" y="51" width="2" height="11" rx="1"/>
+              <path d="M24 2 C24 2 8 16 8 32 C8 44 16 56 24 62 C32 56 40 44 40 32 C40 16 24 2 24 2Z" opacity="0.15" />
+              <path d="M24 8 C24 8 12 20 12 33 C12 43 17 53 24 58 C31 53 36 43 36 33 C36 20 24 8 24 8Z" opacity="0.3" />
+              <path d="M24 14 C24 14 16 24 16 34 C16 42 19 50 24 55 C29 50 32 42 32 34 C32 24 24 14 24 14Z" opacity="0.6" />
+              <path d="M24 20 C24 20 19 28 19 35 C19 41 21 47 24 51 C27 47 29 41 29 35 C29 28 24 20 24 20Z" />
+              <rect x="23" y="51" width="2" height="11" rx="1" />
             </svg>
           </div>
           <span className="font-serif font-light text-3xl md:text-4xl tracking-[0.15em] text-white uppercase">
-            Riders Hotel
+            Ridar Hotel
           </span>
           <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-white/40 mt-2">
             Seeta · Mukono · Uganda
@@ -150,7 +150,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-6 text-center">
           <p className="font-sans text-[10px] uppercase tracking-[0.12em] text-white/20">
-            &copy; {new Date().getFullYear()} Riders Hotel, Seeta, Mukono, Uganda. All rights reserved.
+            &copy; {new Date().getFullYear()} Ridar Hotel, Seeta, Mukono, Uganda. All rights reserved.
           </p>
         </div>
       </div>

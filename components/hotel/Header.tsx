@@ -63,7 +63,7 @@ export default function Header() {
           {/* Left: Logo */}
           <Link href="/" className="flex flex-col items-center leading-none shrink-0 group">
             <span className="font-serif text-[17px] md:text-[19px] font-normal tracking-[0.15em] text-[#020101] uppercase">
-              Riders Hotel
+              Ridar Hotel
             </span>
 
           </Link>
@@ -120,7 +120,7 @@ export default function Header() {
               aria-label="Mobile navigation"
             >
               <div className="flex items-center justify-between mb-8 pb-4 border-b border-[#DDDDDD]">
-                <span className="font-serif text-[#020101] text-xl tracking-wider">Riders Hotel</span>
+                <span className="font-serif text-[#020101] text-xl tracking-wider">Ridar Hotel</span>
                 <button
                   onClick={() => setMobileOpen(false)}
                   className="text-[#686868] hover:text-ocean-teal transition-colors"

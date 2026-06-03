@@ -3,7 +3,7 @@
 // ──────────────────────────────────────────────
 
 export const HOTEL_INFO = {
-  name: 'Riders Hotel',
+  name: 'Ridar Hotel',
   tagline: 'A Comfortable Stay in the Heart of Seeta, Mukono',
   address: 'Seeta, Mukono, Uganda',
   phone: '+256 770 712 652',
@@ -88,13 +88,13 @@ export const ROOMS = [
     purpose: ['Business', 'Family'],
   },
   {
-    slug: 'family-room',
-    name: 'Family Room',
+    slug: 'cottages',
+    name: 'Cottages',
     price: 'From UGX 200,000 / night',
     priceNum: 200000,
     size: '45 m²',
-    occupancy: '4 guests',
-    bed: '1 King + 2 Single Beds',
+    occupancy: '3 guests',
+    bed: '1 Double Bed',
     image: '/assets/riders-cottage2.jpg',
     images: [
       '/assets/riders-cottage2.jpg',
@@ -102,7 +102,7 @@ export const ROOMS = [
       '/assets/Ridar-Hotel-3.jpg',
     ],
     description:
-      'Spacious family room accommodating up to four guests — the ideal base for families exploring Mukono, Sezibwa Falls, and the Jinja route.',
+      'Spacious family room accommodating up to 3 guests — the ideal base for families exploring Mukono, Sezibwa Falls, and the Jinja route.',
     amenities: ['King + 2 Singles', 'Free Wi-Fi', 'Air Conditioning', 'En-Suite Bathroom', 'Smart TV', 'Safe', 'Mini-Fridge'],
     breakfast: 'Included',
     featured: true,

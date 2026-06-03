@@ -13,26 +13,26 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Riders Hotel — Premium Accommodation in Seeta, Mukono, Uganda',
+  title: 'Ridar Hotel — Premium Accommodation in Seeta, Mukono, Uganda',
   description:
-    'Discover luxury accommodation at Riders Hotel in Seeta, Mukono. Premium rooms, fine dining, conferences, and events. Located near Kampala–Jinja Highway. Book your stay today.',
+    'Discover luxury accommodation at Ridar Hotel in Seeta, Mukono. Premium rooms, fine dining, conferences, and events. Located near Kampala–Jinja Highway. Book your stay today.',
   keywords:
     'hotel Seeta, hotel Mukono, luxury accommodation Uganda, Kampala Jinja highway hotel, Namanve business hotel, event venue Uganda, conference hotel Uganda',
-  metadataBase: new URL('https://ridershotel.ug'),
+  metadataBase: new URL('https://ridarhotel.ug'),
   alternates: {
-    canonical: 'https://ridershotel.ug',
+    canonical: 'https://ridarhotel.ug',
   },
   openGraph: {
-    title: 'Riders Hotel — Seeta, Mukono, Uganda',
+    title: 'Ridar Hotel — Seeta, Mukono, Uganda',
     description:
       'Luxury hotel with premium rooms, fine dining, conference facilities, and event spaces in Seeta.',
     type: 'website',
     locale: 'en_UG',
-    url: 'https://ridershotel.ug',
+    url: 'https://ridarhotel.ug',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Riders Hotel — Seeta, Mukono',
+    title: 'Ridar Hotel — Seeta, Mukono',
     description: 'Premium accommodation near Kampala–Jinja Highway',
   },
   icons: {
@@ -95,7 +95,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'Riders Hotel',
+              name: 'Ridar Hotel',
               url: 'https://ridarhotel.co.ug',
               logo: 'https://ridarhotel.co.ug/logo.svg',
               contact: {

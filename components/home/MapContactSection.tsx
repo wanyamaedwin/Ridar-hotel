@@ -25,7 +25,7 @@ export default function MapContactSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-stretch">
-          
+
           {/* Left Column: Contacts & Directions */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -39,7 +39,7 @@ export default function MapContactSection() {
                 Coordinates &amp; Details
               </span>
               <h3 className="font-serif text-[28px] font-normal text-deep-navy leading-tight mb-4">
-                Riders Hotel, Seeta
+                Ridar Hotel, Seeta
               </h3>
               <p className="text-charcoal/80 text-[16px] leading-[1.7] mb-8 font-normal">
                 Directly accessible along the Kampala–Jinja Highway corridor, our location is ideal for business clients visiting Namanve Industrial Park and travelers heading east.

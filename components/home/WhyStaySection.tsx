@@ -21,7 +21,7 @@ export default function WhyStaySection() {
               className="lg:col-span-5 flex flex-col justify-center"
             >
               <span className="text-ocean-teal text-[11px] uppercase tracking-[0.3em] font-sans font-semibold mb-2 flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-ocean-teal" />
+
                 Spa &amp; Wellness
               </span>
               <h2 className="font-serif text-[38px] font-normal text-deep-navy leading-tight mb-6">
@@ -42,7 +42,7 @@ export default function WhyStaySection() {
 
               <Link
                 href="/"
-                className="bg-ocean-teal text-deep-navy text-[14px] uppercase tracking-[0.15em] font-semibold px-8 py-4 rounded-md hover:bg-[#8BC5C5] transition-all duration-300 self-start flex items-center gap-2 border-2 border-ocean-teal hover:border-[#8BC5C5] shadow-[0_2px_8px_rgba(0,0,0,0.08)] cursor-pointer"
+                className="btn-primary"
               >
                 Book Spa Session <ArrowRight className="w-4 h-4" />
               </Link>
@@ -113,7 +113,7 @@ export default function WhyStaySection() {
 
               <Link
                 href="/"
-                className="bg-ocean-teal text-deep-navy text-[14px] uppercase tracking-[0.15em] font-semibold px-8 py-4 rounded-md hover:bg-[#8BC5C5] transition-all duration-300 self-start flex items-center gap-2 border-2 border-ocean-teal hover:border-[#8BC5C5] shadow-[0_2px_8px_rgba(0,0,0,0.08)] cursor-pointer"
+                className="btn-primary"
               >
                 Inquire About Weddings <ArrowRight className="w-4 h-4" />
               </Link>
@@ -148,7 +148,7 @@ export default function WhyStaySection() {
 
               <Link
                 href="/"
-                className="bg-ocean-teal text-deep-navy text-[14px] uppercase tracking-[0.15em] font-semibold px-8 py-4 rounded-md hover:bg-[#8BC5C5] transition-all duration-300 self-start flex items-center gap-2 border-2 border-ocean-teal hover:border-[#8BC5C5] shadow-[0_2px_8px_rgba(0,0,0,0.08)] cursor-pointer"
+                className="btn-primary"
               >
                 View Art Showcase <ArrowRight className="w-4 h-4" />
               </Link>
